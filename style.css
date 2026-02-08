@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* App container */
+.app {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+/* Cards */
+.join-card,
+.chat-card {
+  background: #020617;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  padding: 20px;
+}
+
+/* Join screen */
+.join-card h1 {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.join-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #1e293b;
+}
+
+.join-card button {
+  width: 100%;
+  padding: 12px;
+  background: #6366f1;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.join-card button:hover {
+  background: #4f46e5;
+}
+
+/* Chat */
+.chat-header {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.chat-messages {
+  height: 300px;
+  overflow-y: auto;
+  padding-right: 6px;
+  margin-bottom: 10px;
+}
+
+/* Message bubbles */
+.message {
+  margin-bottom: 10px;
+}
+
+.message .user {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.message .text {
+  background: #1e293b;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  max-width: 80%;
+}
+
+/* Input */
+.chat-input {
+  display: flex;
+  gap: 8px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #1e293b;
+}
+
+.chat-input button {
+  padding: 10px 14px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background: #16a34a;
+}

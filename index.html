@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- JOIN SCREEN -->
+  <div id="join" class="join-card">
+    <h1>Join a Room</h1>
+    <input id="username" placeholder="Your name">
+    <input id="room" placeholder="Room name">
+    <button onclick="joinChat()">Join Chat</button>
+  </div>
+
+  <!-- CHAT SCREEN -->
+  <div id="chat" class="chat-card" style="display:none;">
+    <div class="chat-header">
+      <span id="room-name">Room</span>
+    </div>
+
+    <div id="messages" class="chat-messages"></div>
+
+    <div class="chat-input">
+      <input id="msg" placeholder="Type a message...">
+      <button onclick="sendMsg()">Send</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
